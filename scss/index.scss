@@ -1,0 +1,92 @@
+@import "./colors";
+
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("../assets/fonts/MotivaSansThin.ttf") format("ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("../assets/fonts/MotivaSansLight.woff.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("../assets/fonts/MotivaSansRegular.woff.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("../assets/fonts/MotivaSansMedium.woff.ttf") format("woff");
+  font-weight: 500;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("../assets/fonts/MotivaSansExtraBold.ttf") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("../assets/fonts/MotivaSansExtraBold.ttf") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("../assets/fonts/MotivaSansBlack.woff.ttf") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  font-family: "Motiva Sans", sans-serif;
+  transition: .25s ease-in-out;
+}
+
+.f-azure {
+  color: $azure;
+}
+
+.f-darkblue {
+  color: $darkBlue;
+}
+.f-white {
+  color: white;
+}
+
+.f-pink {
+  color: $mainPink;
+}
+.h-1 {
+  font-size: 4.5rem;
+}
+
+.h-2 {
+  font-size: 4rem;
+}
+.h-3 {
+  font-size: 3rem;
+}
+.h-4 {
+  font-size: 2rem;
+}
+
+.standard {
+  font-size: 1.5rem;
+}
+
+.left {
+  text-align: left;
+}

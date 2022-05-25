@@ -1,0 +1,183 @@
+@import "./colors";
+
+.third__section {
+  text-align: center;
+  height: auto;
+  .help__container {
+    padding: 4rem 0;
+    width: 100%;
+    background: #0a473d;
+    .help {
+      font-size: 5rem;
+      font-weight: 900;
+      color: white;
+    }
+  }
+  .tiles__container {
+    background: $lightGreen;
+    width: 100%; 
+    padding: 7rem 0;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    .tile {
+      height: 460px;
+      width: 350px;
+      background: white;
+      border-radius: 10px;
+      margin: 0 1rem;
+      .tile__rocket {
+        padding: 2.5rem 0;
+      }
+      .tile__heading {
+        font-size: 2rem;
+        font-weight: 800;
+        padding: -1rem 0; 
+        letter-spacing: -1px;
+      }
+      .tile__p {
+        font-size: 1.5rem;
+        padding: 1rem 1rem 2rem 1rem;
+      }
+      .tile__button {
+        border: none;
+        border-radius: 3px;
+        background: $clay;
+        font-size: 1.75rem;
+        padding: .5rem 1.75rem .5rem 1.75rem;
+        font-weight: 400;
+        color: white;
+        transition: .25s ease-in-out;
+        &:hover {
+          background: $gradientPink;
+        }
+      }
+    }
+  }
+  .contact__container {
+    min-height: 420px;
+    width: 100%;
+    background: #0a473d;
+    .contact__heading {
+      font-size: 4rem;
+      padding: 5rem 0 2rem 0;
+      color: white;
+    }
+    .contact__paragraph {
+      font-size: 2rem;
+      color: white;
+    }
+    .contact__button {
+      border: none;
+      border-radius: 5px;
+      font-size: 1.75rem;
+      margin: 3rem 0;
+      padding: .75rem 3rem;
+      background: $clay;
+      transition: .25s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .third__section {
+    .tiles__container {
+      background: $lightGreen;
+      width: 100%; 
+      flex-direction: column;
+      .tile {
+        height: 450px;
+        width: 650px;
+        margin: 2rem 1rem;
+        .tile__rocket {
+          padding: 2.5rem 0;
+        }
+        .tile__heading {
+          font-size: 2rem;
+          font-weight: 800;
+          padding: -1rem 0; 
+          letter-spacing: -1px;
+        }
+        .tile__p {
+          font-size: 1.5rem;
+          padding: 1rem 1rem 2rem 1rem;
+        }
+        .tile__button {
+          border: none;
+          border-radius: 3px;
+          background: $clay;
+          font-size: 1.75rem;
+          padding: .75rem 2rem .85rem 2rem;
+          font-weight: 400;
+          color: white;
+          transition: .25s ease-in-out;
+          &:hover {
+            background: $gradientPink;
+          }
+        }
+      }
+    }
+  
+  }
+  }
+
+  @media screen and (max-width: 900px) {
+    .third__section {
+      padding: 0;
+      .help__container {
+        padding: 2rem 0;
+        .help {
+          font-size: 2.5rem;
+        }
+      }
+      .tiles__container {
+        background: $lightGreen;
+        width: 100%; 
+        flex-direction: column;
+        padding: 2rem 0;
+        .tile {
+          height: 420px;
+          width: 500px;
+          margin: 2rem 1rem;
+          .tile__rocket {
+            padding: 2.5rem 0;
+          }
+          .tile__heading {
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-top: -1rem; 
+            letter-spacing: -1px;
+          }
+          .tile__p {
+            font-size: 1.25rem;
+            padding: 1rem 1rem 2rem 1rem;
+          }
+          .tile__button {
+            font-size: 1.25rem;
+            padding: .5rem 3rem .5rem 3rem;
+
+          }
+        }
+      }
+      .contact__container {
+        min-height: auto;
+        margin: 0;
+        .contact__heading {
+          font-size: 2rem;
+          padding: 2rem 0 1rem 0;
+        }
+        .contact__paragraph {
+          font-size: 1.125rem;
+        }
+        .contact__button {
+          font-size: 1.25rem;
+          color: white;
+        }
+      }
+    }
+    }

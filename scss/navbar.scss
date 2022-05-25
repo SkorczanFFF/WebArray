@@ -1,0 +1,131 @@
+@import "./colors";
+
+.navbar__container {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  transition: all .5s;
+  .navbar {
+    padding: 2rem 8rem;
+    background: rgba(255, 255, 255, 0.1);
+    .links {
+      float: right;
+      padding: 6px 0;
+      .nav__link {
+        text-decoration: none;
+        color: #232649;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: 0 2.25rem;
+        transition: .25s ease-in-out;
+         &:hover {
+          color: white;
+        }
+      }
+    }
+    .navbar__button {
+      border: none;
+      font-size: 1.75rem;
+      padding: .75rem 3rem;
+      border-radius: 5px;
+      background: $mainPink;
+      color: white;
+      float: right;
+      transition: .25s ease-in-out;
+      cursor: pointer;
+      margin-top: -14px;
+      margin-left: 2.5rem;
+      &:hover {
+        background: $gradientPurple;
+      }
+    }
+  }
+  .navbar-mobile {
+    display: none;
+    background: rgba(255, 255, 255, 0.1);
+    .phone {
+      padding: 1.25rem 0 0 2rem;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .burger {
+      padding: 1.25rem 2rem 0 0;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+  .navbar__bottom {
+    .sales {
+      float: right;
+      font-weight: 500;
+      padding: .75rem;
+      margin-right: 10rem;
+      font-size: 1.5rem;
+      color: #232649;
+    }
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .navbar__container {
+    .navbar {
+      padding: 2rem 7rem;
+      .links {
+        .nav__link {
+          margin: 0 1.5rem;
+        }
+      }
+    }
+    .navbar-mobile {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .navbar__container {
+    .navbar-mobile {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      .logo {
+        padding: 1rem;
+      }
+    }
+    .navbar {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1269px) {
+  .navbar__container {
+    height: auto;
+    .navbar {
+      display: none;
+    }
+    .navbar-mobile {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      .logo {
+        padding: 1rem;
+      }
+    }
+    .navbar__bottom {
+      .sales {
+        text-align: center;
+        padding: .25rem;
+        margin: 0;
+        font-size: 1.25rem;
+        float: none
+      }
+    }
+  }
+}

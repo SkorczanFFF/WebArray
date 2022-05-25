@@ -1,0 +1,103 @@
+@import url("https://css.gg/laptop.css");
+.footer {
+  background: black;
+  height: 125px;
+}
+
+.footer .footer__wrapper {
+  width: 85%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.footer .footer__wrapper .footer__logo {
+  float: left;
+}
+
+.footer .footer__wrapper .details__container {
+  padding-left: 2em;
+  width: auto;
+  float: left;
+}
+
+.footer .footer__wrapper .details__container .footer__menu {
+  float: left;
+}
+
+.footer .footer__wrapper .details__container .footer__menu .menu__item {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0 1rem 1em 0;
+  top: -5px;
+}
+
+.footer .footer__wrapper .details__container .footer__menu .menu__item .footer__icon {
+  margin-right: .35rem;
+  margin-bottom: -.15rem;
+}
+
+.footer .footer__wrapper .text {
+  color: white;
+}
+
+.footer .footer__wrapper .text .footer__p {
+  float: left;
+  margin: .5rem 5rem 0 0;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.footer .footer__mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1340px) {
+  .footer {
+    background: black;
+    height: 325px;
+    margin: auto;
+  }
+  .footer .footer__wrapper {
+    display: none;
+  }
+  .footer .footer__mobile {
+    display: block;
+  }
+  .footer .footer__mobile .footer__logo {
+    margin: 0 auto;
+    display: table;
+    height: 40px;
+    padding: 3rem 0 2rem 0;
+  }
+  .footer .footer__mobile .grid__items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    text-align: center;
+  }
+  .footer .footer__mobile .grid__items .menu__item {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0 1rem 2em 0;
+    top: -5px;
+  }
+  .footer .footer__mobile .grid__items .menu__item .footer__icon {
+    margin-right: .35rem;
+    margin-bottom: -.15rem;
+    height: 16px;
+  }
+  .footer .footer__mobile .footer__p {
+    color: white;
+    text-align: center;
+    padding: .5rem 0;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
