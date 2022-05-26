@@ -5,6 +5,20 @@
   .globes {
     padding: 3rem 0;
     width: 100%;
+    overflow: hidden;
+    position: relative;
+    .globes__row {
+      transform: rotate(.1deg);
+      opacity: .2;
+      width: 2400px;
+      .globe {
+        margin: .75rem 1.25rem;
+        filter: drop-shadow(0 8px 8px rgba(72,72,72,0.12))
+      }
+    }
+    .globes-moved {
+      margin-left: -2rem;
+    }
   }
   .devices {
     width: 1200px;
@@ -153,8 +167,7 @@
   background: $lightBlue;
   height: auto;
   margin: -16rem auto;
-  padding: 14rem 0 2rem 0;
-  //text-align: center; 
+  padding: 13rem 0 2rem 0;
   overflow: hidden;
   position: relative;
   top: -210px;
@@ -168,7 +181,7 @@
       .breakdown__icon {
         vertical-align:middle;
         margin-right: 1rem;
-        filter: drop-shadow(0 8px 8px rgba(72,72,72,0.12))
+        filter: drop-shadow(0 8px 8px rgba(72,72,72,0.12));
       }
     }
   }
