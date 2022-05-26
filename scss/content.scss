@@ -153,15 +153,15 @@
   background: $lightBlue;
   height: auto;
   margin: -16rem auto;
-  padding: 16rem 0 4rem 0;
-  text-align: center; 
+  padding: 14rem 0 2rem 0;
+  //text-align: center; 
   overflow: hidden;
   position: relative;
   top: -210px;
   z-index: -99;
   .breakdown__row {
     width: 2400px;
-    margin: 0 -15rem 2rem 0rem;
+    margin: 0 0rem 2rem 0rem;
     .breakdown__item {
       display: inline;
       margin: .5rem 2rem;
@@ -174,8 +174,9 @@
   }
 
   .moved {
-    margin-left: -10rem;
+    margin-left: -6rem;
   }
+
 
   .breakdown__button-mobile {
     display: none;
@@ -712,13 +713,13 @@ h2 {
       }
     }
     .clipped {
-      margin: 2.85rem 0 0 0;
+      margin: -13.2rem 0 0 0;
       z-index: 99;
     }
 
     .breakdown {
-      height: 420px;
-      margin-top: -2rem;
+      height: 440px;
+      margin: 0;
       }
       .breakdown__button {
         display: none;
@@ -730,20 +731,23 @@ h2 {
         color: $azure;
         border: none;
         font-weight: 500;
-        margin: 4rem auto 1rem auto;
+        margin: 3rem auto 1rem auto;
       }
       .breakdown__row {
-        margin-left: -23rem;
-      }
-      .moved {
-        margin-left: -16rem;
-      }
-      .breakdown__item {
-        font-size: 1rem;
-        .breakdown__icon {
-          height: 40px;
+        margin-left: -24rem;
+        .breakdown__item {
+          font-size: 1rem;
+          display: inline;
+          margin: .5rem 1rem;
+          .breakdown__icon {
+            height: 40px;
+          }
         }
       }
+      .moved {
+        margin-left: -17rem;
+      }
     }
+
   }
   

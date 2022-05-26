@@ -37,10 +37,11 @@ function generateTiles() {
 		var tileNumber = i + 1
 		var tile = document.createElement('span')
     
+    tile.innerHTML =	
+    '<div class="phone__item active" onclick="changeSlide(' + tileNumber + ')"><img src="./assets/img/excavator.jpg" class="evcavator" /><p class="item__label">Constructions</p></div>'
+    document.getElementById('phone-menu').appendChild(tile)
     if (tileNumber == 1) {
-      tile.innerHTML =	
-      '<div class="phone__item active" onclick="changeSlide(' + tileNumber + ')"><img src="./assets/img/excavator.jpg" class="evcavator" /><p class="item__label">Constructions</p></div>'
-		  document.getElementById('phone-menu').appendChild(tile)
+      
     } else {
       tile.innerHTML =	
       '<div class="phone__item" onclick="changeSlide(' + tileNumber + ')"><img src="./assets/img/excavator.jpg" class="evcavator" /><p class="item__label">Constructions</p></div>'

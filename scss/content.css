@@ -184,8 +184,7 @@
   background: #d6f0ff;
   height: auto;
   margin: -16rem auto;
-  padding: 16rem 0 4rem 0;
-  text-align: center;
+  padding: 14rem 0 2rem 0;
   overflow: hidden;
   position: relative;
   top: -210px;
@@ -194,7 +193,7 @@
 
 .breakdown .breakdown__row {
   width: 2400px;
-  margin: 0 -15rem 2rem 0rem;
+  margin: 0 0rem 2rem 0rem;
 }
 
 .breakdown .breakdown__row .breakdown__item {
@@ -210,7 +209,7 @@
 }
 
 .breakdown .moved {
-  margin-left: -10rem;
+  margin-left: -6rem;
 }
 
 .breakdown .breakdown__button-mobile {
@@ -807,12 +806,12 @@ h2 {
     cursor: pointer;
   }
   .content .clipped {
-    margin: 2.85rem 0 0 0;
+    margin: -13.2rem 0 0 0;
     z-index: 99;
   }
   .content .breakdown {
-    height: 420px;
-    margin-top: -2rem;
+    height: 440px;
+    margin: 0;
   }
   .content .breakdown__button {
     display: none;
@@ -824,19 +823,21 @@ h2 {
     color: #007ad8;
     border: none;
     font-weight: 500;
-    margin: 4rem auto 1rem auto;
+    margin: 3rem auto 1rem auto;
   }
   .content .breakdown__row {
-    margin-left: -23rem;
+    margin-left: -24rem;
+  }
+  .content .breakdown__row .breakdown__item {
+    font-size: 1rem;
+    display: inline;
+    margin: .5rem 1rem;
+  }
+  .content .breakdown__row .breakdown__item .breakdown__icon {
+    height: 40px;
   }
   .content .moved {
-    margin-left: -16rem;
-  }
-  .content .breakdown__item {
-    font-size: 1rem;
-  }
-  .content .breakdown__item .breakdown__icon {
-    height: 40px;
+    margin-left: -17rem;
   }
 }
 /*# sourceMappingURL=content.css.map */

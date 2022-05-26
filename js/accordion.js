@@ -2,7 +2,6 @@ const accordionBtns = document.querySelectorAll(".acc__header")
 
 accordionBtns.forEach((accordion) => {
   accordion.onclick = function () {
-    //this.classList.toggle("active")
     let content = this.nextElementSibling;
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
